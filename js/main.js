@@ -1,65 +1,68 @@
 let clientScore=0;
 let comScore=0;
 
-let clientChoice=prompt("Vui long dua ra lua chon cua ban: ");
+function getComNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
 
-function getComputerChoice(){
-  let comChoice;
+function getComputerChoice(comNumber){
     if (comNumber==1){
-          comChoice='keo';
+          return 'kéo';
         }
 
     if (comNumber==2){
-          comChoice='bua';
+          return 'búa';
         }
 
     if (comNumber==3){
-          comChoice='bao';
+          return 'bao';
         }
 }
-
-console.log(clientChoice);
-console.log(comChoice);
 
 function playRound(a,b){
-  if((a=='keo'&& b=='keo')||
-    (a=='bua'&& b=='bua')||
+  if((a=='kéo'&& b=='kéo')||
+    (a=='búa'&& b=='búa')||
      (a=='bao'&& b=='bao'))  {
-    return 'Hai ban da hoa nhau';
+    return 'Hai bạn đã hòa nhau hiệp này';
 }
 
-if((a=='keo'&& b=='bua')||
-    (a=='bua'&& b=='bao')||
-      (a=='bao'&& b=='keo')) 
+if((a=='kéo'&& b=='búa')||
+    (a=='búa'&& b=='bao')||
+      (a=='bao'&& b=='kéo')) 
        {
         clientScore++;
-        return 'Ban da thang hiep nay! '+  b +' da danh bai ' + a;
+        return 'Bạn đã thắng hiệp này! '+  b +' đã đánh bại ' + a;
         }
 
-if((a=='keo'&& b=='bao')||
-    (a=='bua'&& b=='keo')||
-      (a=='bao'&& b=='bua')) 
+if((a=='kéo'&& b=='bao')||
+    (a=='búa'&& b=='kéo')||
+      (a=='bao'&& b=='búa')) 
         {
           comScore++;
-          return 'Ban da thua hiep nay! '+  a +' da danh bai ' + b;
+          return 'Bạn đã thua hiệp này! '+  a +' đã đánh bại ' + b;
 }
 }
 
-function game(){
-  while((clientScore<5)||(comScore<5)){
-    let message=playRound(clientChoice,comChoice);
-    if(clientScore==5){
-      console.log('Chuc mung ban da chien thang');
-      break;
+function game(soluot){
+    for(let i=1;i<=soluot;i++){
+      let comNumber=getComNumber(1,3);
+      let clientChoice=prompt("Vui lòng đưa ra lựa chọn của bạn: ").toLowerCase();
+      let comChoice=getComputerChoice(comNumber);
+      let message= playRound(comChoice,clientChoice);
+      console.log(clientChoice);
+      console.log(comChoice);
+      console.log(message);
     }
-    
-    if(comScore==5){
-      console.log('Xin loi ban da thua');
-      break;
     }
-    
-}
-}
-        
-        console.log('Diem cua ban: ',clientScore);
-        console.log('Diem cua may: ',comScore);
+    game(5);
+    let ketqua;
+    if(clientScore>comScore){
+      ketqua='Bạn đã chiến thắng chung cuộc!!!!!!!!';
+    } else if(clientScore==comScore){
+      ketqua='Hai bạn đã hòa nhau.';
+    } else {
+      ketqua='Bạn đã thất bại hoàn toàn :)))))))';
+    }
+        console.log(ketqua);
+        console.log('Điểm của bạn: ',clientScore);
+        console.log('Điểm của máy: ',comScore);
