@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Human vs Orc</title>
   <link rel="stylesheet" href="./assets/css/style.css"></link>
-  <!-- <script src="./js/main.js"></script> -->
+  <script src="./js/main.js"></script>
 </head>
 <body>
   <div id="container">
@@ -13,8 +13,8 @@
       <img src="./assets/img/logo.png" alt="logo" style="width:100px; height:100px;" >
       <div class="name">RPS Battle</div></div>
     <ul id="nav">
-      <li class="newgame"><a href="">New Game</li> 
-      <li class="lore"><a href="">Lore</li> 
+      <li ><button class="newGame" href="">New Game</li> 
+      <li ><button class="lore" href="">Lore</li> 
     </ul>
     <div id="warArea">
       <div><h1 class="choose">Choose Your Weapon</h1></div>
@@ -22,6 +22,15 @@
         <a class="rock"><img src="./assets/img/rock.png"> </a>
         <a class="paper"><img src="./assets/img/paper.png"> </a>
         <a class="scis"><img src="./assets/img/scis.png"> </a>
+      </div>
+      <div class="message">First to score 5 point win the game</div>
+      <div class="character">
+        <div class="you">You</div>
+        <div class="orc">Orc</div>
+      </div>
+      <div class="scoreboard">
+        <div class="yourScore">0</div>
+        <div class="orcScore">0</div>
       </div>
     </div>
     </div>

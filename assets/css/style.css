@@ -32,8 +32,7 @@ body{
   gap: 50px;
 }
 
-.newgame,
-.lore{
+#nav button{
   font-size: 50px;
   margin: 10px 10px 10px 10px;
   text-align: center;
@@ -42,21 +41,13 @@ body{
   border-radius: 15px;
   color: darkred;
   background-color:#e1ad01;
-}
-
-.newgame{
   width: 290px;
   height: auto; 
 }
 
-.nav li:hover{
-  background: black 0.8;
-}
-
-.lore{
-  width: 220px;
-  height: auto; 
-
+#nav button:hover{
+  background-color: rgba(225, 173, 1,0.8);
+  color: white;
 }
 
 #warArea{
@@ -86,5 +77,45 @@ body{
   border: 2px solid black;
   border-radius: 10px;
   background-color: #e1ad01;
-  margin-top: 80px;
+  margin-top: 50px;
+}
+
+.rock:hover{
+  background-color: silver;
+}
+
+.paper:hover{
+  background-color: silver;
+}
+
+.scis:hover{
+  background-color: silver;
+}
+
+.message{
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  top: 20px;
+  color: #e1ad01;
+}
+
+.character{
+  display:flex;
+  justify-content: center;
+  gap: 150px;
+  position: relative;
+  top: 20px;
+  font-size: 60px;
+  color: #e1ad01;
+}
+
+.scoreboard{
+  display:flex;
+  justify-content: center;
+  gap: 200px;
+  position: relative;
+  top: 15px;
+  font-size: 60px;
+  color: #e1ad01;
 }
