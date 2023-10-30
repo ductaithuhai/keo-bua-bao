@@ -1,5 +1,8 @@
+@font-face { font-family: dragon; src: url('../font/DragonForcE.ttf'); } 
+@font-face { font-family: dracula; src: url('../font/blooods_.ttf'); } 
+@font-face { font-family: snorkad; src: url('../font/Snorkad-Regular.ttf'); } 
 html{
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family:snorkad;
 }
 
 body{
@@ -33,6 +36,7 @@ body{
 }
 
 #nav button{
+  font-family: snorkad;
   font-size: 50px;
   margin: 10px 10px 10px 10px;
   text-align: center;
@@ -52,7 +56,7 @@ body{
 
 #warArea{
   width: 1068px;
-  height: 600px;
+  height: 675px;
   margin:auto;
   /* margin-left: 400px;
   margin-right: 400px;
@@ -121,14 +125,24 @@ body{
   color: #e1ad01;
 }
 
+.your,
+.orc{
+  display: flex;
+}
+
+.roundMes{
+  text-align: center;
+  font-size: 25px;
+  color: #e1ad01;
+  margin-top: 10px;
+}
+
 .endGameBackground{
-  color: white;
-  font-size: 35px;
   text-align: center;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 400px; /* Location of the box */
+  padding-top: 200px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -138,22 +152,34 @@ body{
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.endGameMess {
-  margin: auto;
-  padding: 20px;
-  width: 80%;
+.mesContainer {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
+.endGameMes {
+    color: darkred;
+    font-size: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 .close {
-  color: #aaaaaa;
+  color: white;
   float: right;
-  font-size: 28px;
+  font-size: 100px;
   font-weight: bold;
+  position: absolute;
+  top:70px;
+  right: 525px;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: red;
   text-decoration: none;
   cursor: pointer;
 }

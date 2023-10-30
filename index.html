@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Human vs Orc</title>
+  <link rel="icon" href="./assets/img/logo.png" type="image/icon type">
   <link rel="stylesheet" href="./assets/css/style.css"></link>
 </head>
 <body>
@@ -29,18 +30,23 @@
       </div>
       <div class="scoreboard">
         <div class="your">
+          <img class="yourSym" src="./assets/img/question.png" style="width: 60px;height: 90px;">
           <div class="yourScore">0</div>
         </div>
         <div class="orc">
-          <img src=""
           <div class="orcScore">0</div>
+          <img class="orcSym" src="./assets/img/question.png" style="width: 60px;height: 90px;">
         </div>
       </div>
+      <div class="roundMes"></div>
     </div>
   </div>
   <div class="endGameBackground">
-    <span class="close">&times;</span>
-    <div class="endGameMess">1234567890</div>
+    <div class="mesContainer">
+      <img src="./assets/img/paperscroll.png" style="width: 1400px;height: 500px;">
+      <span class="close">&times;</span>
+      <div class="endGameMes">1234567890</div>
+    </div>
   </div>
   <script src="./js/main.js"></script>
 </body>
