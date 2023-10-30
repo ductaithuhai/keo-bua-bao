@@ -53,9 +53,10 @@ body{
 #warArea{
   width: 1068px;
   height: 600px;
-  margin-left: 400px;
+  margin:auto;
+  /* margin-left: 400px;
   margin-right: 400px;
-  margin-top: 50px;
+  margin-top: 50px; */
   background-color: rgba(41,63,48,0.8);
 }
 .choose{
@@ -118,4 +119,41 @@ body{
   top: 15px;
   font-size: 60px;
   color: #e1ad01;
+}
+
+.endGameBackground{
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 400px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.endGameMess {
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
