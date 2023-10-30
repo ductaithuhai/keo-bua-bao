@@ -79,13 +79,13 @@ rock[0].addEventListener("click", function() {
   orcScore[0].innerHTML=comScore;
   ketqua1= ketqua(clientScore,comScore);
   endGameMes[0].innerHTML=ketqua1;
-  yourSym[0].src='../assets/img/rock.png';
+  yourSym[0].src='https://ductaithuhai.github.io/keo-bua-bao/assets/img/rock.png';
   if(comChoice=='Rock'){
-    orcSym[0].src='../assets/img/rock.png';
+    orcSym[0].src='https://ductaithuhai.github.io/keo-bua-bao/assets/img/rock.png';
   } else if(comChoice=='Paper'){
-    orcSym[0].src='../assets/img/paper.png';
+    orcSym[0].src='https://ductaithuhai.github.io/keo-bua-bao//assets/img/paper.png';
   } else{
-    orcSym[0].src='../assets/img/scis.png';
+    orcSym[0].src='https://ductaithuhai.github.io/keo-bua-bao//assets/img/scis.png';
   }
   roundMes[0].innerHTML=message;
 });
@@ -100,13 +100,13 @@ paper[0].addEventListener("click", function() {
   yourScore[0].innerHTML=clientScore;
   orcScore[0].innerHTML=comScore;
   endGameMes[0].innerHTML=ketqua1;
-  yourSym[0].src='../assets/img/paper.png';
+  yourSym[0].src='https://ductaithuhai.github.io/keo-bua-bao//assets/img/paper.png';
   if(comChoice=='Rock'){
-    orcSym[0].src='../assets/img/rock.png';
+    orcSym[0].src='https://ductaithuhai.github.io/keo-bua-bao//assets/img/rock.png';
   } else if(comChoice=='Paper'){
-    orcSym[0].src='../assets/img/paper.png';
+    orcSym[0].src='https://ductaithuhai.github.io/keo-bua-bao//assets/img/paper.png';
   } else{
-    orcSym[0].src='../assets/img/scis.png';
+    orcSym[0].src='https://ductaithuhai.github.io/keo-bua-bao//assets/img/scis.png';
   }
   roundMes[0].innerHTML=message;
 });
@@ -121,13 +121,13 @@ scis[0].addEventListener("click", function() {
   yourScore[0].innerHTML=clientScore;
   orcScore[0].innerHTML=comScore;
   endGameMes[0].innerHTML=ketqua1;
-  yourSym[0].src='../assets/img/scis.png';
+  yourSym[0].src='https://ductaithuhai.github.io/keo-bua-bao//assets/img/scis.png';
   if(comChoice=='Rock'){
-    orcSym[0].src='../assets/img/rock.png';
+    orcSym[0].src='https://ductaithuhai.github.io/keo-bua-bao//assets/img/rock.png';
   } else if(comChoice=='Paper'){
-    orcSym[0].src='../assets/img/paper.png';
+    orcSym[0].src='https://ductaithuhai.github.io/keo-bua-bao//assets/img/paper.png';
   } else{
-    orcSym[0].src='../assets/img/scis.png';
+    orcSym[0].src='https://ductaithuhai.github.io/keo-bua-bao//assets/img/scis.png';
   }
   roundMes[0].innerHTML=message;
 });
